@@ -1,4 +1,4 @@
-from db.schemas import Prompt
+from src.schemas import Prompt
 from fastapi import APIRouter
 import openai
 import os
