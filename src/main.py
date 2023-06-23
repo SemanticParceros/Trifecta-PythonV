@@ -10,3 +10,9 @@ app.include_router(response.router)
 load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_SECRET_KEY")
+
+@app.get("/")
+def index():
+    return {"message": "Hello World"}
+
+
